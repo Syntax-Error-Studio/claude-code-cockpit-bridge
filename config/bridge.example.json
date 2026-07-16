@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "adapter": {
+    "listenHost": "127.0.0.1",
+    "listenPort": 7551,
+    "upstreamHost": "127.0.0.1",
+    "upstreamPort": 7550,
+    "maxBodyBytes": 67108864,
+    "upstreamTimeoutMs": 120000
+  },
+  "models": {
+    "aliases": {
+      "cockpit-gpt55-xhigh": {
+        "model": "gpt-5.5",
+        "effort": "xhigh"
+      },
+      "cockpit-gpt54-high": {
+        "model": "gpt-5.4",
+        "effort": "high"
+      },
+      "cockpit-sol-xhigh": {
+        "model": "gpt-5.6-sol",
+        "effort": "xhigh"
+      },
+      "cockpit-terra-xhigh": {
+        "model": "gpt-5.6-terra",
+        "effort": "xhigh"
+      },
+      "claude-opus-4-8": {
+        "model": "gpt-5.5",
+        "effort": "xhigh"
+      },
+      "claude-opus-4-8[1m]": {
+        "model": "gpt-5.5",
+        "effort": "xhigh"
+      },
+      "claude-sonnet-4-6": {
+        "model": "gpt-5.6-terra",
+        "effort": "xhigh"
+      },
+      "claude-sonnet-4-6[1m]": {
+        "model": "gpt-5.6-terra",
+        "effort": "xhigh"
+      },
+      "claude-haiku-4-5": {
+        "model": "gpt-5.4",
+        "effort": "high"
+      },
+      "claude-fable-5": {
+        "model": "gpt-5.6-sol",
+        "effort": "xhigh"
+      }
+    },
+    "claudeRoles": {
+      "default": "cockpit-gpt55-xhigh",
+      "opus": "cockpit-gpt55-xhigh",
+      "opusDisplayName": "GPT-5.5 xhigh",
+      "sonnet": "cockpit-terra-xhigh",
+      "sonnetDisplayName": "GPT-5.6 Terra xhigh",
+      "fable": "cockpit-sol-xhigh",
+      "fableDisplayName": "GPT-5.6 Sol xhigh",
+      "haiku": "cockpit-gpt54-high",
+      "haikuDisplayName": "GPT-5.4 high"
+    }
+  },
+  "windows": {
+    "nodeExe": "",
+    "cockpitExe": "",
+    "installDir": "",
+    "sidecarConfig": "",
+    "sidecarManifest": "",
+    "sidecarQuotaState": ""
+  },
+  "wsl": {
+    "distro": "",
+    "home": "",
+    "projectDir": "",
+    "claudeBin": "",
+    "launcherPath": ""
+  },
+  "startup": {
+    "warmupModel": "cockpit-gpt55-xhigh",
+    "warmupAttempts": 3,
+    "warmupDelaySeconds": 3,
+    "warmupTimeoutSeconds": 90,
+    "launchModelRole": "opus"
+  }
+}
