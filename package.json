@@ -1,0 +1,17 @@
+{
+  "name": "claude-code-cockpit-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local Windows-to-WSL bridge that lets Claude Code use an Anthropic-compatible Cockpit sidecar with configurable model aliases and reasoning effort.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:adapter": "node --test tests/adapter.test.mjs",
+    "test:config": "node --test tests/config.test.mjs",
+    "test:secrets": "node --test tests/no-secrets.test.mjs"
+  },
+  "license": "MIT"
+}
