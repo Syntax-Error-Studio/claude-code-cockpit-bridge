@@ -1,0 +1,25 @@
+# Local runtime configuration and secrets
+config/bridge.local.json
+*.local.json
+.env
+.env.*
+
+# Runtime state
+logs/
+*.log
+*.pid
+*.bak
+*.backup
+
+# Node
+node_modules/
+coverage/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local archives
+*.zip
